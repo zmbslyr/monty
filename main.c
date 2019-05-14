@@ -7,15 +7,21 @@
  */
 int main(void)
 {
-	stack_t *head;
+	stack_t *head, *nodePointer;
+	int n = 45;
 
-	head = malloc(sizeof(stack_t));
-	if (head == NULL)
-		return (-1);
-	head->n = 37;
-	head->prev = NULL;
-	head ->next = NULL;
-	printf("%d\n", head->n);
-	free(head);
+	head = NULL;
+	while (n > 0)
+	{
+		addNode(&head, n);
+		n--;
+	}
+	nodePointer = head;
+	while (nodePointer != NULL)
+	{
+		printf("%d\n", nodePointer->n);
+		nodePointer = nodePointer->next;
+	}
+	freeList(&head);
 	return (0);
 }
