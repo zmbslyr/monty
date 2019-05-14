@@ -14,4 +14,5 @@ int main(void)
 		return (-1);
 	head->n = 1;
 	printf("%d\n", head->n);
+	return (0);
 }
