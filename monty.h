@@ -35,4 +35,9 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-#endif /* __MONTY */
+
+/* Functions */
+stack_t *addNode(stack_t **head, int n);
+int freeList(stack_t **head);
+
+#endif /* __MONTY__ */
