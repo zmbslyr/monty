@@ -4,8 +4,26 @@
 /* Includes */
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
 
 /* Structs */
+/**
+ * struct globals_s - All globals for the program
+ * @line: Line number
+ * @file: File name
+ * @opcode: opcode
+ *
+ * Description: Holds the line number and file name
+ * for error handling
+ */
+struct globals_s
+{
+	int line;
+	char *file;
+	char *opcode;
+} globals;
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -39,5 +57,13 @@ typedef struct instruction_s
 /* Functions */
 stack_t *addNode(stack_t **head, int n);
 int freeList(stack_t **head);
+int popNode(stack_t **head);
+stack_t *initStack(int value);
+void printList(stack_t **head, unsigned int line);
+void (*opFc(stack_t **h, FILE **f))(stack_t **s, unsigned int l);
+void printTop(stack_t **head, unsigned int line);
+void usageErr(void);
+void nopFunc(stack_t **stack, unsigned int line);
+void fileErr(void);
 
 #endif /* __MONTY__ */
