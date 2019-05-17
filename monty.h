@@ -68,5 +68,8 @@ void fileErr(void);
 void swapFunc(stack_t **stack, unsigned int line);
 void addFunc(stack_t **stack, unsigned int line);
 void subFunc(stack_t **stack, unsigned int line);
+void divFunc(stack_t **stack, unsigned int line);
+void mulFunc(stack_t **stack, unsigned int line);
+void modFunc(stack_t **stack, unsigned int line);
 
 #endif /* __MONTY__ */

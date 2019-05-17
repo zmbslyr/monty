@@ -77,3 +77,29 @@ void subFunc(stack_t **stack, unsigned int line)
 	b = popNode(stack);
 	addNode(stack, b - a);
 }
+
+/**
+ * divFunc - Divides the second top element by the top element
+ * @stack: Start of the stack
+ * @line: Line number
+ *
+ * Return: void
+ */
+void divFunc(stack_t **stack, unsigned int line)
+{
+	int a, b;
+
+	if (!(stack)[1])
+	{
+		fprintf(stderr, "L%d: can't div, stack too short\n", line);
+		exit(EXIT_FAILURE);
+	}
+	a = popNode(stack);
+	b = popNode(stack);
+	if (a == 0)
+	{
+		fprintf(stderr, "L%d: division by zero\n", line);
+		exit(EXIT_FAILURE);
+	}
+	addNode(stack, b / a);
+}
