@@ -15,6 +15,8 @@ void (*opFc(stack_t **h, FILE **f))(stack_t **s, unsigned int l)
 		{"pint", printTop},
 		{"swap", swapFunc},
 		{"nop", nopFunc},
+		{"add", addFunc},
+		{"sub", subFunc},
 		{NULL, NULL}
 	};
 	int index = 0;

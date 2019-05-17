@@ -34,3 +34,46 @@ void swapFunc(stack_t **stack, unsigned int line)
 	(*stack)->next->n = swap;
 
 }
+
+/**
+ * addFunc - Adds the top two nodes
+ * @stack: Start of the stack
+ * @line: Line Number
+ *
+ * Return: void
+ */
+void addFunc(stack_t **stack, unsigned int line)
+{
+	int a, b;
+
+	if (!(stack)[1])
+	{
+		fprintf(stderr, "L%d: can't add, stack too short\n", line);
+		exit(EXIT_FAILURE);
+	}
+	a = popNode(stack);
+	b = popNode(stack);
+	addNode(stack, a + b);
+
+}
+
+/**
+ * subFunc - Subtracts the top element from the second element
+ * @stack: Start of the stack
+ * @line: Line number
+ *
+ * Return: void
+ */
+void subFunc(stack_t **stack, unsigned int line)
+{
+	int a, b;
+
+	if (!(stack)[1])
+	{
+		fprintf(stderr, "L%d: can't sub, stack too short\n", line);
+		exit(EXIT_FAILURE);
+	}
+	a = popNode(stack);
+	b = popNode(stack);
+	addNode(stack, b - a);
+}
