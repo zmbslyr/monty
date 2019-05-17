@@ -65,5 +65,6 @@ void printTop(stack_t **head, unsigned int line);
 void usageErr(void);
 void nopFunc(stack_t **stack, unsigned int line);
 void fileErr(void);
+void swapFunc(stack_t **stack, unsigned int line);
 
 #endif /* __MONTY__ */
