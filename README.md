@@ -1,4 +1,11 @@
+# Monty
+
+A lightweight interpreter for monty bytecode. Used for building and manipulating a stack or queue.
+
+![Monty Screenshot](/img/monty.png)
+
 ### Compilation
+
 The files are to be compiled this way:
 ```
 $ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
@@ -11,6 +18,7 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 A few Monty bytecode files are supplied in the `byecodes` directory. For supported opcodes, look below.
 
 ### Example of usage
+
 ```
 $ cat bytecodes/12.m
 push 1
@@ -93,3 +101,9 @@ $ ./monty bytecodes/12.m
   Usage: `mod`
 
   What it does: computes the remainder of the division of the second top element of the stack by the top element of the stack. The answer is stored in the second top element of the stack and the top element is removed so that the top element contains the result and the stack is one element shorter.
+
+### Author
+Mark Hedgeland  
+[Twitter](https://twitter.com/markhedgeland)  
+[LinkedIn](https://linkedin.com/in/markhedgeland)  
+[Personal Site](http://markhedgeland.tech)
