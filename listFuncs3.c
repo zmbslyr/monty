@@ -5,7 +5,7 @@
  * @stack: Start of the stack
  * @line: Line number
  *
- * Return: void
+ * Return: void 
  */
 void mulFunc(stack_t **stack, unsigned int line)
 {
