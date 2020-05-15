@@ -6,7 +6,7 @@
  * @h: Head of the stack
  * @f: File for closing purposes
  *
- * Return: Function Pointer
+ * Return: Function Pointer 
  */
 void (*opFc(stack_t **h, FILE **f))(stack_t **s, unsigned int l)
 {
