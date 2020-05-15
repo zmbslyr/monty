@@ -5,7 +5,7 @@
  * @stack: Start of the stack
  * @line: Line Number
  *
- * Return: void
+ * Return: void 
  */
 void nopFunc(stack_t **stack, unsigned int line)
 {
