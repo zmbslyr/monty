@@ -1,6 +1,21 @@
 # Monty
 
-A lightweight interpreter for monty bytecode. Used for building and manipulating a stack or queue.
+A lightweight interpreter for monty bytecode. Used for building and manipulating a stack or queue. The goal of this project was to use linked lists, and memory management, to create a leak-free program that manages stacks and queues provided from a monty bytecode file (example.m).
+```
+$ cat example.m
+push 2
+push 6
+push 3
+pall
+add
+pall
+$ ./monty example.m
+3
+6
+2
+9
+2
+```
 
 ![Monty Screenshot](/img/monty.png)
 
@@ -15,7 +30,7 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 1. compile files
 2. `$ ./monty monty_byte_code_file_name.m`
 
-A few Monty bytecode files are supplied in the `byecodes` directory. For supported opcodes, look below.
+A few Monty bytecode files are supplied in the `bytecodes` directory. For supported opcodes, look below.
 
 ### Example of usage
 
