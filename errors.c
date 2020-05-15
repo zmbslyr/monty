@@ -3,7 +3,7 @@
 /**
  * usageErr - Error for if the program isn't called correctly
  *
- * Return: void
+ * Return: void 
  */
 void usageErr(void)
 {
