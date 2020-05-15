@@ -15,7 +15,7 @@
  * @opcode: opcode
  *
  * Description: Holds the line number and file name
- * for error handling
+ * for error handling 
  */
 struct globals_s
 {
