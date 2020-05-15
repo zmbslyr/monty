@@ -5,7 +5,7 @@
  * @head: Head Node of the linked list
  * @n: data to populate node with
  *
- * Return: Address of the new node
+ * Return: Address of the new node 
  */
 stack_t *addNode(stack_t **head, int n)
 {
