@@ -5,7 +5,7 @@
  * @argc: Number of arguments given to main
  * @argv: Arguments stored in string format
  *
- * Return: Always 0
+ * Return: Always 0 
  */
 int main(int argc, char **argv)
 {
