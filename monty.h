@@ -7,8 +7,6 @@
 #include <string.h>
 #include <stdbool.h>
 
-/* TEST Line CHange /*
-
 /* Structs */
 /**
  * struct globals_s - All globals for the program
